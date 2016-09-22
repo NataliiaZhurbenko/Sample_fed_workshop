@@ -1,0 +1,60 @@
+.main-news {
+  &__head{
+    font-weight: 500;
+    }
+
+  &-header {
+    position: relative;
+    &__text {
+      font-weight: 500;
+      //display: inline-block;
+      float: left;
+      }
+
+    &__strip {
+      display: block;
+      font-size: 1.5em;
+      margin-top: 0.5em;
+      border-bottom: 2px solid $black;
+      margin-left: 125px;
+      }
+    }
+
+  &-list {
+
+    @include list-reset;
+
+    &__item{
+      width: 142px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 17px;
+      &:first-child {
+        margin: 0;
+        }
+
+
+
+      }
+
+
+
+
+    &__link{
+
+      }
+
+    &__image{
+
+      }
+
+    &__title{
+      text-decoration: none;
+      color: $default-text;
+      font-size: 12px;
+
+      }
+
+    }
+
+  }

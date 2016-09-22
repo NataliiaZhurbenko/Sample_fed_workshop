@@ -1,0 +1,11 @@
+@mixin box-sizing($box-sizing){
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+  }
+
+@mixin list-reset(){
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }

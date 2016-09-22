@@ -1,0 +1,90 @@
+.carousel {
+  position: relative;
+  background: $carousel-background;
+  border-bottom: 5px solid #c70000;
+
+  &__image {
+
+    &-link {
+      float: left;
+      width: 377px;
+      height: 250px;
+      }
+    }
+
+  &-main {
+    position: relative;
+    padding: 12px 10px 60px 23px; // padding-bottom could be changed due to control dimensions
+    overflow: hidden;
+    }
+
+  &__link {
+    height: 100%;
+    }
+
+  &__header {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #c80000;
+    font-weight: bold;
+    }
+
+  &__description {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    }
+
+  &__control {
+    display: inline-block;
+    width: 13px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("#{$imagesDir}carousel-arrow-sprite.png");
+    vertical-align: middle;
+
+    &_previous {
+      background-position: 0 0;
+      margin-right: 7px;
+
+      }
+
+    &_next {
+      background-position: -13px 0;
+      margin-left: 10px;
+      }
+
+    &-container {
+      //width: 100px;
+      position: absolute;
+      right: 12px;
+      bottom: 0;
+
+      }
+    }
+
+  &-counter {
+    display: inline;
+    vertical-align: middle;
+    &__current {
+
+      &:after {
+        content: '/';
+        }
+
+      }
+    }
+
+  &__spinner {
+    width: 18px;
+    background: red;  
+    height: 121px;
+    background-color: transparent;
+    background-image: url("#{$imagesDir}carousel-spinner.png");
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+  }

@@ -1,0 +1,40 @@
+.hot-themes {
+  margin-bottom: 20px;
+  //background: $gray;
+
+  &__header {
+    float: left;
+    padding: 7px 15px;
+    background: #333;
+    font-size: 18px;
+    line-height: 19px;
+    color: #fff;
+    }
+
+  &-list {
+    @include list-reset;
+    padding: 4px 0;
+    background: #d7d8d9;
+
+    &-item {
+
+      display: inline-block;
+      padding: 3px 15px;
+      vertical-align: middle;
+
+      &__title {
+        font-size: 18px;
+        line-height: 19px;
+        color: #333;
+
+        }
+
+      }
+
+    }
+
+  }
+
+.test {
+  background: black;
+  }

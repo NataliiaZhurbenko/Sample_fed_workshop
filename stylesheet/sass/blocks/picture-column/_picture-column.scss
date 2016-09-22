@@ -1,0 +1,36 @@
+.picture-column {
+  &-list {
+    @include list-reset;
+
+    &__item {
+      margin-bottom: 23px;
+      }
+
+    &__link {
+
+      }
+
+    &__image-container {
+      position: relative;
+      &:before {
+        content: '';
+        width: 24px;
+        height: 20px;
+        background: url("#{$images-path}picture-column-camera-icon.png");
+        position: absolute;
+        bottom: 8px;
+        left: 4px;
+        }
+      }
+
+    &__image {
+
+      }
+
+    &__text {
+      font-weight: 600;
+      color: $black;
+      }
+
+    }
+  }

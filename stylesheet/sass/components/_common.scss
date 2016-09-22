@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.g-clearfix {
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+html {
+  font-family: sans-serif;
+  }
+
+img {
+  border: 0;
+  }
+
